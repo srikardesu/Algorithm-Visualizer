@@ -23,6 +23,10 @@ clone the repository
 > git clone [https://github.com/srikardesu/Algorithm-Visualizer](https://github.com/srikardesu/Algorithm-Visualizer)
 > 
 
+cd into Sorting-Visualizer
+> cd Sorting-Visualizer
+>
+
 Run it using:
 
 > python3 main.py
