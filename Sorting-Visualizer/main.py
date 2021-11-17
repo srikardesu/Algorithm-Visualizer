@@ -4,6 +4,7 @@ import random
 from colors import *
 
 from sorting_algorithms.bubbleSort import bubblesort
+from sorting_algorithms.insertionSort import insertionsort
 
 #Testing bubblesort
 
@@ -60,6 +61,8 @@ def sort():
     Tick = speed()
     if algo_menu.get() == 'Bubble Sort':
         bubblesort(data, draw, Tick)
+    elif algo_menu.get() == 'Insertion Sort':
+        insertionsort(data, draw, Tick)
 
 window = Tk()
 window.title("Sorting Algorithms Visualization")
