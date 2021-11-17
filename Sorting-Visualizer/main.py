@@ -5,6 +5,7 @@ from colors import *
 
 from sorting_algorithms.bubbleSort import bubblesort
 from sorting_algorithms.insertionSort import insertionsort
+from sorting_algorithms.selectionSort import selectionsort
 
 #Testing bubblesort
 
@@ -63,6 +64,8 @@ def sort():
         bubblesort(data, draw, Tick)
     elif algo_menu.get() == 'Insertion Sort':
         insertionsort(data, draw, Tick)
+    elif algo_menu.get() == 'Selection Sort':
+        selectionsort(data, draw, Tick)
 
 window = Tk()
 window.title("Sorting Algorithms Visualization")
