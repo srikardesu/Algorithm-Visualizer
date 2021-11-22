@@ -7,6 +7,7 @@ from sorting_algorithms.bubbleSort import bubblesort
 from sorting_algorithms.insertionSort import insertionsort
 from sorting_algorithms.selectionSort import selectionsort
 from sorting_algorithms.countingSort import countingsort
+from sorting_algorithms.mergeSort import mergesort
 
 #Testing bubblesort
 
@@ -69,6 +70,8 @@ def sort():
         selectionsort(data, draw, Tick)
     elif algo_menu.get() == 'Counting Sort':
         countingsort(data, draw, Tick)
+    elif algo_menu.get() == 'Merge Sort':
+        mergesort(data, 0, len(data)-1, draw, Tick)
 
 window = Tk()
 window.title("Sorting Algorithms Visualization")
