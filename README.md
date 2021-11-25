@@ -13,7 +13,6 @@ The algorithms that have been implemented are as follows :
 - Selection Sort
 - Merge Sort
 - Quick Sort
-- Heap Sort
 - Counting Sort
 
 ### How to run it?
