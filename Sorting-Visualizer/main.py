@@ -8,6 +8,7 @@ from sorting_algorithms.insertionSort import insertionsort
 from sorting_algorithms.selectionSort import selectionsort
 from sorting_algorithms.countingSort import countingsort
 from sorting_algorithms.mergeSort import mergesort
+from sorting_algorithms.quickSort import quicksort
 
 #Testing bubblesort
 
@@ -72,6 +73,12 @@ def sort():
         countingsort(data, draw, Tick)
     elif algo_menu.get() == 'Merge Sort':
         mergesort(data, 0, len(data)-1, draw, Tick)
+        colorstore = [LIGHT_GREEN for x in range(len(data))]
+        draw(data, colorstore)
+    elif algo_menu.get() == 'Quick Sort':
+        quicksort(data,0,len(data)-1,draw,Tick)
+        colorstore = [LIGHT_GREEN for x in range(len(data))]
+        draw(data, colorstore)
 
 window = Tk()
 window.title("Sorting Algorithms Visualization")
@@ -81,7 +88,7 @@ window.config(bg=WHITE)
 algorithm_name = StringVar()
 speed_name = StringVar()
 data = []
-algo_list = ['Bubble Sort', 'Insertion Sort', 'Selection Sort', 'Merge Sort', 'Quick Sort', 'Heap Sort', 'Counting Sort']
+algo_list = ['Bubble Sort', 'Insertion Sort', 'Selection Sort', 'Merge Sort', 'Quick Sort', 'Counting Sort']
 speed_list = ['Fast', 'Medium', 'Slow']
 
 UI_frame = Frame(window)
