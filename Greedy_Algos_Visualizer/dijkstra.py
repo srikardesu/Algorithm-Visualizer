@@ -58,7 +58,7 @@ def DrawGraph(G):
     # print(pos)
     nx.draw(G, pos, with_labels=True)
     edge_labels = dict([((u, v), distance['length']) for u, v, distance in G.edges(data=True)])
-    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, label_pos=0.5, font_size=10)
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, label_pos=0.3, font_size=11)
     return pos
 
 if __name__ == "__main__":
