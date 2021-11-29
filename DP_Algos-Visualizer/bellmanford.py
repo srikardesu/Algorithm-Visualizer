@@ -36,7 +36,7 @@ def bellman(G, source, pos):
 
 
 def CreateGraph():
-    G = nx.DiGraph()
+    G = nx.DiGraph()    
     f = open('inp_bellmanford.txt')
     n = int(f.readline())
     wtMatrix = []
